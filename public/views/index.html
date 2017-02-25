@@ -167,6 +167,18 @@
 	</footer>
 
   <script src="../scripts/forms.js"></script>
-	<script src="../scripts/db.js"></script>
+  <script src="../scripts/db.js"></script>
+  <script>
+  $('#enviar-button').click(function() {
+    console.log('ok');
+    studentData.name = $('#nome').val();
+    studentData.email = $('#email').val();
+    studentData.course = $('#curso').val();
+    console.log(studentData);
+    add(studentData);
+  });
+
+
+  </script>
 </body>
 </html>
