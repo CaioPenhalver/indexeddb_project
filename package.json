@@ -1,0 +1,23 @@
+{
+  "name": "indexeddb_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaioPenhalver/indexeddb_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaioPenhalver/indexeddb_project/issues"
+  },
+  "homepage": "https://github.com/CaioPenhalver/indexeddb_project#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
