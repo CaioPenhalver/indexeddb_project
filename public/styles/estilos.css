@@ -89,6 +89,7 @@
 	padding: 20px;
 	background-color: #7F7F7F;
 	color: white;
+  margin-top: 50px;
 }
 
 
@@ -106,21 +107,13 @@
 .flex-item {   
   align-self: auto;   
   padding: 8px;   
-  width: 300px;     
-  min-height: 280px;   
+  width: 250px;     
+  min-height: 180px;   
   border: 1px solid rgb(166, 166, 166);   
   margin: 5px;   
   border-radius: 8px;   
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
-} 
-.message-container { } 
-.row-button {   
-  width: 100%; 
-} 
-.text-container {   
-  margin-top: 40px;   
-  margin-bottom: 20px;   
+  text-align: center;
   word-wrap: break-word; 
-}
-
+} 
 

@@ -166,6 +166,7 @@
 		<p>Copyright 2017 - Todos os direitos reservados</p>
 	</footer>
 
+  <script src="../scripts/course.js"></script>
   <script src="../scripts/forms.js"></script>
   <script src="../scripts/db.js"></script>
   <script>
@@ -176,6 +177,8 @@
     studentData.course = $('#curso').val();
     console.log(studentData);
     add(studentData);
+    studentData.name = $('#nome').val("");
+    studentData.email = $('#email').val("");
   });
 
 

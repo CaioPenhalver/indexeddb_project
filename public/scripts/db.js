@@ -65,16 +65,6 @@ var startDB = function() {
          };
 }
 
-var remove = function(student) {
-            var request = db.transaction(['students'], 'readwrite')
-                            .objectStore('students')
-                            .delete(student);
-            
-            request.onsuccess = function(event) {
-               alert("Kenny's entry has been removed from your database.");
-            };
-}
-
 var listStudents = function() {
             console.log('database -->>>> '+db);
             var objectStore = db.transaction(['students'])
@@ -83,10 +73,17 @@ var listStudents = function() {
               var cursor = event.target.result;
                  
               if (cursor) {
+                var courseName;
+                cursos.forEach(function(curso, index) {
+                  if(cursor.value.course === curso.id){
+                    courseName = curso.titulo;
+                    return;
+                  }
+                });
                 $('#flex-container').append("<div class=\"flex-item\">"+
-                                            cursor.value.name +
-                                            cursor.value.course +
-                                            cursor.key +
+                                           "<h3>"+cursor.value.name+"</h3>" +
+                                            "<p>"+cursor.key+"</p>" +
+                                            "<p>"+courseName+"</p>" +
                                             "</div>");
                 console.log(cursor);
                 cursor.continue();
